@@ -27,7 +27,7 @@ body{
 }
 .main-nav{
   background-color: #333333;
-  padding: 3px 0px 3px 0px;
+  padding: 5px 0px 5px 0px;
   font-size: 17px;
   color: white;
   display: flex;
@@ -53,12 +53,15 @@ a{
 }
 #smedia-links{
   grid-row: 2/3;
-  padding: 0px 25px 0px 25px;
+  padding: 10px 25px 10px 25px;
+  margin-bottom: 25px;
   text-align: center;
+  background-color: darkgrey;
 }
 input, select{
   height: 30px;
   align-self: right;
+  text-align: center;
 }
 .label{
   align-self: left;
@@ -79,7 +82,6 @@ li{
   font-size: 15px;
   color:white;
   background-color: grey;
-  margin-bottom: 25px;
 }
 .form-flex{
   display: flex;
@@ -136,10 +138,49 @@ i{
   padding: none;
   inline-size: 300px;
   overflow-wrap: break-word;
-  
 }
 h2{
   font-size: 1.7em;
+}
+.menu-container{
+  display: grid;
+  grid-template-columns: auto;
+  text-align: center;
+  margin: 0px 5px 45px 5px;
+}
+.flex-img{
+  width: 350px;
+  height: 250px;
+  margin: 5px;
+}
+.secondary-container{
+  width: auto;
+  margin: 50px auto 50px auto;
+  border: 2px black solid;
+}
+.menu-text{
+  padding: 5px;
+}
+h3.menu-text{
+  font-size: 35px;
+}
+p.menu-text{
+  font-size: 20px;
+}
+.footergrid{
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: space-around;
+  color: white;
+  background-color: #333333;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+.footer-text{
+  align-self: center;
+  font-size: 20px;
 }
 @media (min-width: 568px){
   .title{
@@ -167,6 +208,24 @@ h2{
     grid-column: 2/3;
     grid-row: auto;
   }
+  .menu-container{
+    grid-template-columns: auto auto;
+    justify-content: space-between;
+    column-gap: 50px;
+    margin: 20px 20px 60px 2px;
+  }
+  .secondary-container{
+    width: auto;
+    margin: 25px 25px 25px 25px;
+  }
+  .flex-img{
+    width: 200px;
+    height: 200px;
+    margin: 5px;
+  }
+  .footer-text{
+    font-size: 35px;
+  }
 }
 @media (min-width: 900px){
   .title{
@@ -176,5 +235,10 @@ h2{
   .title-p{
     padding-left: 70px;
     font-size: 40px;
+  }
+  .flex-img{
+    width: 350px;
+    height: 250px;
+    margin: 5px;
   }
 }
