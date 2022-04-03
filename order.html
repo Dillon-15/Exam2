@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/2d52e15448.js" crossorigin="anonymous"></script>
   </head>
   <body>
     <header>
@@ -26,30 +27,85 @@
     <div class="grid-container-main">
       <div id="order-info">
         <div>
-            <h1>Fill out the form below and then await your freshly made masterpiece.</h1>
+            <h1 class="form-text">Fill out the form below and then await your freshly made masterpiece.</h1>
 
             <form>
               <ul class="form-flex">
-                <li>
-                  <label for="f-name">First Name:</label>
-                  <input for="f-name" id="f-name" placeholder="Enter  your first name">
-                </li>
-                <li>
-                  <label for="l-name">Last Name:</label>
-                  <input for="l-name" id="l-name" placeholder="Enter your last name"><br>
-                </li>
-                <li>
-                  <label for="pizza-size">Select a Size</label>
-                  <select id="pizza-size" name="pizza-size">
-                    <option value="large">Large - 14 inch </option>
-                    <option value="medium">Medium - 12 inch </option>
-                    <option value="small">Small - 10 inch </option>
-                    <option value="personal">Personal - 7 inch </option>
-                  </select>
-                </li>
-                <li>
-                  <input type="submit" name="submit">
-                </li>
+                <ul class="second">
+                  <li>
+                    <label for="f-name" class="label">First Name:</label>
+                  </li> 
+                  <li>
+                    <input for="f-name" id="f-name" placeholder="Enter  your first name">
+                  </li>
+                </ul>
+                <ul class="second">
+                  <li>
+                    <label for="l-name" class="label">Last Name:</label>
+                  </li>
+                  <li>
+                    <input for="l-name" id="l-name" placeholder="Enter your last name">
+                  </li>
+                </ul>
+                <ul class="second">
+                  <li>
+                    <Label for="numberofpizza" class="label">How many Pizzas:</Label>
+                  </li>
+                  <li>
+                    <input for="numberofpizza" id="numberofpizza" placeholder="1">
+                  </li>
+                </ul>
+                <ul class="second">
+                  <li>
+                    <label for="pizza-size" class="label">Select a Size </label>
+                  </li>
+                  <li>
+                    <select id="pizza-size" name="pizza-size" >
+                      <option value="select">Select </option>
+                      <option value="large">Large - 14 inch </option>
+                      <option value="medium">Medium - 12 inch </option>
+                      <option value="small">Small - 10 inch </option>
+                      <option value="personal">Personal - 7 inch </option>
+                    </select>
+                  </li>
+                </ul>
+                <ul class="second">
+                  <li>
+                    <label for="pizza-crust" class="label">Select what Crust </label>
+                  </li>
+                  <li>
+                    <select id="pizza-crust" name="pizza-crust">
+                      <option value="select">Select </option>
+                      <option value="thin">Thin </option>
+                      <option value="classic">Classic</option>
+                      <option value="thick">Thick </option>
+                      <option value="glutenfree">Gluten Free </option>
+                    </select>
+                  </li>
+                </ul>
+                <ul class="second">
+                  <li>
+                    <label for="pizza-kind" class="label">Select what Kind </label>
+                  </li>
+                  <li>
+                    <select id="pizza-kind" name="pizza-kind">
+                      <option value="select">Select </option>
+                      <option value="cheese">Cheese </option>
+                      <option value="sausage">Sausage </option>
+                      <option value="pepperoni">Pepperoni </option>
+                      <option value="hawaiian">Hawaiian </option>
+                      <option value="meatlover">Meat Lovers </option>
+                      <option value="veggie">Veggie </option>
+                      <option value="pulledpork">Pulled Pork </option>
+                      <option value="supreme">Supreme </option>
+                    </select>
+                  </li>
+                </ul>
+                <ul class="second">
+                  <li>
+                    <input type="submit" name="submit" class="button" value="Place Order">
+                  </li>
+                </ul>
               </ul>
             </form>
 
@@ -57,7 +113,31 @@
       </div>
       <div id="smedia-links">
         <div class="grid-container-links">
-          <h1>Got any Questions</h1>
+          <h1 class="form-text">Got any Questions</h1>
+          <p style="font-size: 30px;">Feel free to call or email us our number is <a herf="tel:+10000000000" class="contact">(000)000-0000</a> and our email is <a herf="mailto:CheechsPizza@gmail.com" class="contact">CheechsPizza@gmail.com</a></p>
+          <br>
+          <br>
+          <h1>Check us out on our Social Media</h1>
+          <i class="fa-brands fa-facebook-square"></i><i class="fa-brands fa-twitter-square"></i><i class="fa-brands fa-instagram-square"></i>
+          <br>
+          <h2>Here are some of our Reviews and feel free to leave one.</h2>
+          <div class="review">
+            <h3>Crag - 5 Stars</h3>
+            <p>"You guys rock! I would gladly pay over 600 dollars for Pizza. I was amazed at the quality of Pizza."</p>
+          </div>
+          <div class="review2">
+            <h3>Romola  - 5 Stars</h3>
+            <p>"Pizza is the most valuable business resource we have EVER purchased. Pizza did exactly what you said it does. It's really wonderful. I was amazed at the quality of Pizza."</p>
+          </div>
+          <br>
+
+          <form>
+            <label class="review-label">So want to tell us about your experience.</label>
+            <p style="opacity: 0%;"> </p>
+            <textarea name="reviews" class="review-form" cols="30" rows="10" placeholder="Leave a Review."></textarea>
+            <br>
+            <input type="submit" name="submit" class="button2" value="Submit">
+          </form>
         </div>
       </div>
     </div>
